@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      for (let i = 50; i <= 100; i += 5) {
+        let keterangan = "";
+
+        if (i <= 60) {
+          keterangan = "KURANG";
+        } else if (i <= 70) {
+          keterangan = "CUKUP";
+        } else if (i <= 80) {
+          keterangan = "BAIK";
+        } else {
+          keterangan = "LUAR BIASA";
+        }
+
+        console.log(`${i} - ${keterangan}`);
+      }
+    </script>
+  </body>
+</html>
